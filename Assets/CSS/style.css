@@ -54,9 +54,7 @@ Portfolio
 .section-center {
     width: 90vw;
     margin: 0 auto;
-    /* max-width: 1170px;   */
-    display: flex;
-    justify-content: space-between;
+    max-width: 1170px;  
 }
 
 .portfolio-card {
@@ -82,11 +80,38 @@ Portfolio
 
 }
 
-.photo {
-    height: 14rem;
-    width: 50vh;
-    object-fit: cover;  
+img:not(.nav-logo) {
+    width: 100%;
+    display: block;
 }
+
+.photo {
+    height: 15rem;
+    object-fit: cover;
+
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio-card {
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+
+}
+
+@media screen and (min-width: 1170px) {
+    .portfolio-card {
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
+
+
 
 /* 
 Footer
