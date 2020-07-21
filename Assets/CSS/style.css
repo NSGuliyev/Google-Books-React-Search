@@ -35,7 +35,7 @@ Hero
 */
 .hero {
     min-height: 50vh;
-    background: url("/ResourcesForDevNight/hero1.jpg") center/cover no-repeat;
+    background: url("/Assets/images/hero1.jpg") center/cover no-repeat;
 }
 
 /* 
